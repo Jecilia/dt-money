@@ -13,7 +13,8 @@ export function Header() {
           <Dialog.Portal>
             <Dialog.Overlay />
             <Dialog.Content>
-              <Dialog.Title></Dialog.Title>
+              <Dialog.Title>Nova Transação</Dialog.Title>
+              <Dialog.Close />
             </Dialog.Content>
           </Dialog.Portal>
         </Dialog.Root>
