@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Header } from '../../components/header'
 import { Summary } from '../../components/summary'
-import { TransactionContext } from '../../contexts/TransactionsContext'
+import { TransactionsContext } from '../../contexts/TransactionsContext'
 import { SearchForm } from './components/search-form'
 import {
   PriceHighlight,
@@ -10,7 +10,7 @@ import {
 } from './styles'
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionContext)
+  const { transactions } = useContext(TransactionsContext)
   return (
     <div>
       <Header />

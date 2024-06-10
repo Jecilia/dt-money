@@ -11,7 +11,7 @@ interface Transaction {
 interface TransactionContextType {
   transactions: Transaction[]
 }
-export const TransactionContext = createContext({} as TransactionContextType)
+export const TransactionsContext = createContext({} as TransactionContextType)
 
 interface TransactionProviderProps {
   children: ReactNode
@@ -27,8 +27,8 @@ export function TransactionProvider({ children }: TransactionProviderProps) {
     loadTransactions()
   }, [])
   return (
-    <TransactionContext.Provider value={{ transactions }}>
+    <TransactionsContext.Provider value={{ transactions }}>
       {children}
-    </TransactionContext.Provider>
+    </TransactionsContext.Provider>
   )
 }
