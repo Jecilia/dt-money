@@ -47,7 +47,7 @@ export function Summary() {
           <span>Total</span>
           <CurrencyDollar size={32} color="#ffff" />
         </header>
-        <strong>R$ {priceFormatter.format(summary.total)}</strong>
+        <strong>{priceFormatter.format(summary.total)}</strong>
       </SummaryCard>
     </SummaryContainer>
   )
