@@ -9,16 +9,18 @@ import { TransactionsContext } from '../../../../contexts/TransactionsContext'
 const searshFormSchema = z.object({
   query: z.string(),
 })
-type SearchFormInputs = z.infer<typeof searshFormSchema>  
+type SearchFormInputs = z.infer<typeof searshFormSchema>
 export function SearchForm() {
   const { fetchTransactions } = useContext(TransactionsContext)
-  const { register, handleSubmit, formState:{isSubmitting} } = useForm<SearchFormInputs>(
-    {
-      resolver: zodResolver(searshFormSchema)
-    }
-  )
-  async function handleSearchTransactions(data: SearchFormInputs){
-   await fetchTransactions(data.query)
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<SearchFormInputs>({
+    resolver: zodResolver(searshFormSchema),
+  })
+  async function handleSearchTransactions(data: SearchFormInputs) {
+    await fetchTransactions(data.query)
   }
   return (
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>

@@ -71,6 +71,46 @@
       "category": "jecilia",
       "type": "income",
       "createdAt": "2024-07-02T23:13:46.438Z"
+    },
+    {
+      "id": "c36e",
+      "description": "jeci",
+      "price": 24,
+      "category": "ji",
+      "type": "income",
+      "createdAt": "2024-07-03T12:20:37.921Z"
+    },
+    {
+      "id": "d959",
+      "description": "qwertyui",
+      "price": 234567,
+      "category": "jecilia",
+      "type": "outcome",
+      "createdAt": "2024-07-03T12:20:52.030Z"
+    },
+    {
+      "id": "2b3f",
+      "description": "ijk",
+      "price": 1234,
+      "category": "jecilia",
+      "type": "income",
+      "createdAt": "2024-07-03T12:48:18.874Z"
+    },
+    {
+      "id": "f2a0",
+      "description": "carla",
+      "price": 1234,
+      "category": "jecilia",
+      "type": "income",
+      "createdAt": "2024-07-03T12:48:47.090Z"
+    },
+    {
+      "id": "34b4",
+      "description": "jeci",
+      "price": 123445,
+      "category": "wedrt",
+      "type": "income",
+      "createdAt": "2024-07-03T12:49:51.290Z"
     }
   ]
 }
