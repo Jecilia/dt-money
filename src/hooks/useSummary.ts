@@ -1,4 +1,3 @@
-
 import { useContextSelector } from 'use-context-selector'
 import { TransactionsContext } from '../contexts/TransactionsContext'
 
