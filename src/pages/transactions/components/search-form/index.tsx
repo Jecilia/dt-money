@@ -12,7 +12,7 @@ const searshFormSchema = z.object({
   query: z.string(),
 })
 type SearchFormInputs = z.infer<typeof searshFormSchema>
- function SearchFormComponent() {
+function SearchFormComponent() {
   const fetchTransactions = useContextSelector(
     TransactionsContext,
     (context) => {
